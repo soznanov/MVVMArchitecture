@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qja-mO-xMp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="general" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z3-CW-UNd">
+                                <rect key="frame" x="0.0" y="184" width="414" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="JF9-hr-Gwu"/>
+                                </constraints>
+                                <state key="normal" title="Virtual flow"/>
+                                <connections>
+                                    <action selector="virtualTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="OW6-o9-i7d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwh-4q-NDe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="wFD-m1-fsV"/>
+                                </constraints>
+                                <state key="normal" title="Plastic flow"/>
+                                <connections>
+                                    <action selector="plasticTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHj-xj-hyA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9z3-CW-UNd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ITG-Ye-7ru"/>
+                            <constraint firstItem="9z3-CW-UNd" firstAttribute="top" secondItem="rwh-4q-NDe" secondAttribute="bottom" constant="32" id="RY2-cZ-XyU"/>
+                            <constraint firstItem="9z3-CW-UNd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cbU-M9-UeQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rwh-4q-NDe" secondAttribute="trailing" id="dTf-ZA-3wZ"/>
+                            <constraint firstItem="rwh-4q-NDe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tMF-ha-g9l"/>
+                            <constraint firstItem="rwh-4q-NDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wGS-4p-HMX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ZU-nH-5LF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="csy-qJ-nCd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qja-mO-xMp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QQw-XT-Hpn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rll-3d-WjE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNt-bO-UKM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
